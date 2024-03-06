@@ -2,7 +2,7 @@
 console.log("\nExercise 24");
 console.log("Conditional Tests\n");
 // String Equality & Inequality test
-console.log("1. String Equality & Inequality test");
+console.log("\n1. String Equality & Inequality test: ");
 var s = "Zahir";
 console.log("s = " + s);
 if (s == "Zahir") {
@@ -12,7 +12,7 @@ else if (s != "Zahir") {
     console.log("s is not equal to Zahir");
 }
 // test string using lowercase function
-console.log("2. Test string using lowercase function");
+console.log("\n2. Test string using lowercase function: ");
 var s2 = "HELLO";
 console.log("\ns2 = " + s2);
 if (s2 == "hello") {
@@ -25,7 +25,7 @@ else {
     console.log("s2 is not equal to hello.");
 }
 // Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
-console.log("3. Numerical tests");
+console.log("\n3. Numerical tests: ");
 var num1 = 10;
 var num2 = 7;
 var num3 = 10;
@@ -69,6 +69,7 @@ else if (num1 <= num3) {
     console.log(num1, "is smaller than or equal to", num3);
 }
 //AND OR operators
+console.log("\n4. AND OR Operators test: ");
 var value1 = true;
 var value2 = false;
 // AND operator
@@ -85,12 +86,13 @@ if (value1 || value2) {
 else {
     console.log("Answer of OR operation is: ", value1 || value2);
 }
-//Test whether an Item is in array 
+//Test whether an Item is in array or not
+console.log("\n5. Element is in array or not: ");
 var array1 = [5, 6, 7];
-var num = 5;
+var num = 6;
 if (array1.indexOf(num) != -1) {
-    console.log(num + " is present in the array");
+    console.log(num + " is present in the array.");
 }
 else if (array1.indexOf(num) == -1) {
-    console.log(num + " is not present in the array");
+    console.log(num + " is not present in the array.");
 }
