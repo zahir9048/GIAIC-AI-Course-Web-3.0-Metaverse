@@ -1,4 +1,4 @@
-To initialize node:
+To initialize node in project:
 npm init --yes 
 
 To install dependencies:
