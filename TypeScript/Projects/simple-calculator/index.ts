@@ -1,5 +1,7 @@
 import inquirer from "inquirer";
 
+while(true){
+
 const answer = await inquirer.prompt([
   { message: "Enter first number: ", type: "number", name: "firstNumber" },
   { message: "Enter second number: ", type: "number", name: "secondNumber" },
@@ -7,7 +9,7 @@ const answer = await inquirer.prompt([
     message: "Select any operator: ",
     type: "list",
     name: "operator",
-    choices: ["Addition", "Subtraction", "Multiplication", "Division"],
+    choices: ["Addition", "Subtraction", "Multiplication", "Division", "End Program"],
   },
 ]);
 
@@ -25,6 +27,10 @@ else if(answer.operator === "Multiplication"){
 else if(answer.operator === "Division"){
   console.log("Division:", answer.firstNumber / answer.secondNumber);
 }
+else if(answer.operator === "End Program"){
+  break;
+}
 else{
   console.log("Select valid operator.");
+}
 }
