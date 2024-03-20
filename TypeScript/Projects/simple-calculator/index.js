@@ -1,4 +1,6 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
+console.log("Made By Zahir");
 while (true) {
     const answer = await inquirer.prompt([
         { message: "Enter first number: ", type: "number", name: "firstNumber" },
