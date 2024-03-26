@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk";
 //1 Generate a random number using math.random
 //2 User input for guessing number
 //3 Compare user input with computer generated number and show result
@@ -17,7 +18,7 @@ while (tries > 0) {
     ]);
     if (answers.numberInput === randomNumber) {
         won = true;
-        console.log("Congratulations! You guessed the right number.");
+        console.log(chalk.green("Congratulations! You guessed the right number."));
         break;
     }
     else if (answers.numberInput < randomNumber) {
@@ -29,5 +30,5 @@ while (tries > 0) {
     console.log("You have " + tries + " tries left.\n");
 }
 if (tries == 0 && won == false) {
-    console.log("You Lost, You didnt the guess correctly in 5 tries.");
+    console.log(chalk.bold.red("You Lost, You didnt the guess correctly in 5 tries."));
 }

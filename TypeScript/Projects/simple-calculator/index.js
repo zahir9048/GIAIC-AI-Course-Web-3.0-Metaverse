@@ -9,7 +9,7 @@ while (true) {
             message: "Select any operator: ",
             type: "list",
             name: "operator",
-            choices: ["Addition", "Subtraction", "Multiplication", "Division", "End Program"],
+            choices: ["Addition", "Subtraction", "Multiplication", "Division", "Percentage", "End Program"],
         },
     ]);
     if (answer.operator === "Addition") {
@@ -23,6 +23,9 @@ while (true) {
     }
     else if (answer.operator === "Division") {
         console.log("Division:", answer.firstNumber / answer.secondNumber);
+    }
+    else if (answer.operator === "Percentage") {
+        console.log("Percentage:", (answer.firstNumber / answer.secondNumber) * 100);
     }
     else if (answer.operator === "End Program") {
         break;
