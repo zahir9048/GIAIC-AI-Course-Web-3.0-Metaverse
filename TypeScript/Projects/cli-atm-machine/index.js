@@ -1,11 +1,12 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
-import chalk from "Chalk";
+import chalk from "chalk";
 let myBalance = 10000;
 let setPin = 12345;
 let myPin = await inquirer.prompt([
     {
         name: "code",
-        message: "enter your pin",
+        message: chalk.green("Enter your pin:"),
         type: "number",
     },
 ]);
@@ -16,10 +17,14 @@ if (myPin.code === setPin) {
             name: "operation",
             message: "Select an Option:",
             type: "list",
-            choices: ["fast cash", "withdraw money", "check your balance"],
+            choices: [
+                chalk.green("fast cash"),
+                chalk.green("withdraw money"),
+                chalk.green("check your balance"),
+            ],
         },
     ]);
-    if (ask.operation === "withdraw money") {
+    if (ask.operation === chalk.green("withdraw money")) {
         let withdrawal = await inquirer.prompt([
             {
                 name: "amount",
@@ -35,10 +40,10 @@ if (myPin.code === setPin) {
             console.log(chalk.red(`Insufficient Balance, Your balance is:  ${myBalance}`));
         }
     }
-    else if (ask.operation === "check your balance") {
+    else if (ask.operation === chalk.green("check your balance")) {
         console.log(`Your Current Balance is: ${myBalance}`);
     }
-    else if (ask.operation === "fast cash") {
+    else if (ask.operation === chalk.green("fast cash")) {
         let fastCashOptions = await inquirer.prompt([
             {
                 name: "options",
