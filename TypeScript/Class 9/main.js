@@ -2,7 +2,6 @@
 //                     fruits[0] fruits[1] fruits[2] fruits[3] fruits[4]
 // console.log(fruits[3]);
 // console.log(fruits.length);
-// console.log("Original Array: ", fruits);
 // PUSH method: add element in end
 // fruits.push("Grapes");
 // console.log(fruits);
@@ -18,15 +17,16 @@
 // fruits.unshift("grapes");
 // console.log(fruits);
 //slice method: slices array but does not change the original array
-// console.log(fruits.slice(3, 4));
+// console.log(fruits.slice(2, 5));
 // console.log(fruits);
 //splice method: inserts and deletes elements and changes the original array
-// fruits.splice(1,4,"Grapes","Tomato");
+// console.log("Original Array: ", fruits);
+// fruits.splice(2,2,"Grapes", "Kiwi");
 // console.log("After Splice:", fruits);
 //Array
 var fruits = ["Apples", "Orange", "Mango", "Banana", "Pineapple"];
 // Tuple
-var fruitTuple = ["Apples", 2, "Orange", "Mango"];
-console.log(fruitTuple);
-fruitTuple.push("watermelon");
-console.log(fruitTuple);
+var fruitTuple = ["Apples", 2, "Orange", "Mango", true];
+// console.log(fruitTuple)
+// fruitTuple.push("watermelon");
+console.log(fruitTuple[0]);
