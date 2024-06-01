@@ -15,7 +15,7 @@ let input = ans.userInput;
 
 function startTime(input: number) {
   const initialTime = new Date();
-  console.log(initialTime)
+  // console.log(initialTime)
 
   const intervalTime = new Date().setSeconds(initialTime.getSeconds() + (input+2));
   const intervalTimeFormatted = new Date(intervalTime);
