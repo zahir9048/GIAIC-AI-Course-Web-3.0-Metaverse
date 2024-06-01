@@ -1,0 +1,18 @@
+To initialize node and typescript in project:
+npm init --yes 
+tsc --init
+
+To install dependencies:
+npm i inquirer
+npm i --save-dev @types/inquirer
+npm i date-fns
+npm i chalk
+
+
+To run the project:
+tsc && node index.js
+
+
+To publish:
+npm login
+npm publish
