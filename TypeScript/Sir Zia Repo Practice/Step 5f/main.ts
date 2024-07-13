@@ -1,0 +1,66 @@
+// // let myval: any; // bad prctice
+
+// // myval = true; // OK
+// // myval = 42; // OK
+// // myval = "hey!"; // OK
+// // myval = []; // OK
+// // myval = {}; // OK
+// // myval = Math.random; // OK
+// // myval = null; // OK
+// // myval = undefined; // OK
+// // myval = () => { console.log('Hey again!'); };
+
+// //Unknown
+
+// let value: unknown; // type safe,
+
+// value = true; // OK
+// value = 42; // OK
+// value = "hey!"; // OK
+// value = []; // OK
+// value = {}; // OK
+// value = Math.random; // OK
+// value = null; // OK
+// value = undefined; // OK
+// value = () => { console.log('Hey again!'); }; // OK
+
+// // let num:number = value;
+
+// let val: unknown;
+
+// const val1: unknown = val; // OK
+// const val2: any = val; // OK
+
+// const val3: boolean = val as boolean; // Will throw error
+// const val4: number = val as number; // Will throw error
+// const val5: string = val as string; // Will throw error
+// const val6: Record<string, any> = val as Record<string, any>; // Will throw error
+// const val7: any[] = val as any[]; // Will throw error
+// const val8: (...args: any[]) => void = val;
+
+
+// Never
+
+
+// Function returning never must not have a reachable end point
+// function error(message: string): never {
+//   throw new Error(message);
+  
+// }
+
+
+// // Inferred return type is never
+// function fail() {
+//   return error("Something failed");
+// }
+
+
+
+
+// // Function returning never must not have a reachable end point
+// function infiniteLoop(): never {
+//   while (true) {
+
+//   }
+
+// }
