@@ -178,63 +178,63 @@
 
 
 //asynchronous functions
-// async function pizza(){
+async function pizza(){
 
-//   //synchronously 
+  //synchronously 
 
-//   try{
-//     await orderPizzaPromise();
-//     await preparePizza();
-//     await delivery();
+  try{
+    await orderPizzaPromise();
+    await preparePizza();
+    await delivery();
 
-//   }
-//   catch(error){
-//     console.log(error)
-//   }
+  }
+  catch(error){
+    console.log(error)
+  }
 
-// }
+}
 
-// pizza();
-// console.log("hello")
+pizza();
+console.log("hello")
 
 
 
-// async function orderAndPreparePizza() {
-//   await orderPizzaPromise();
-//   await preparePizza();
-//   await delivery();
-//   return "resolved"
-// }
+async function orderAndPreparePizza() {
+  await orderPizzaPromise();
+  await preparePizza();
+  await delivery();
+  return "resolved"
+}
 
-// function orderPizzaPromise() {
-//   return new Promise((resolve) => {
-//     console.log("Placing order...");
-//     setTimeout(() => {
-//       console.log("Order Placed.");
-//       resolve("");
-//     }, 3000);
-//   });
-// }
+function orderPizzaPromise() {
+  return new Promise((resolve) => {
+    console.log("Placing order...");
+    setTimeout(() => {
+      console.log("Order Placed.");
+      resolve("");
+    }, 3000);
+  });
+}
 
-// function preparePizza() {
-//   return new Promise((resolve) => {
-//     console.log("Preparing pizza...");
-//     setTimeout(() => {
-//       console.log("Pizza is being prepared! 🍕");
-//       resolve("");
-//     }, 3000);
-//   });
-// }
+function preparePizza() {
+  return new Promise((resolve) => {
+    console.log("Preparing pizza...");
+    setTimeout(() => {
+      console.log("Pizza is being prepared! 🍕");
+      resolve("");
+    }, 3000);
+  });
+}
 
-// function delivery() {
-//   setTimeout(() => {
-//     console.log("Lo Khao...🍕");
-//   }, 3000);
-// }
+function delivery() {
+  setTimeout(() => {
+    console.log("Lo Khao...🍕");
+  }, 3000);
+}
 
-// orderAndPreparePizza()
-// .then((data)=>{
-//   console.log(data)
-// });
+orderAndPreparePizza()
+.then((data)=>{
+  console.log(data)
+});
 
-// console.log("it should print first...");
+console.log("it should print first...");

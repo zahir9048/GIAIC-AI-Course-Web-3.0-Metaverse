@@ -21,6 +21,7 @@ import  func, {b, c as cc, d, e as p} from './second.js'; // default & named exp
 
 // console.log(z.default("zahir")); //first way to call default export function
 console.log(func("zahir")); //second way to call default export function
+
 console.log(b, cc);
 
 
