@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+.links-div {
+display: flex;
+gap: 40px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-inline: 30px;
+background-color: #101042;
+}
+
+.header-img img {
+width: 100px; 
+height: 100px;
+}
+
+.section1 img{
+width: 200px;
+height: 200px;
+}
+
+.links-div a{
+text-decoration: none; 
+color: red;
+}
