@@ -61,7 +61,6 @@ a {
   padding-inline: 15px;
 }
 
-
 .footer{
   display: flex;
   flex-direction: column;
@@ -71,14 +70,114 @@ a {
   gap: 15px;
 }
 
-
 .iconsDiv{
   display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-
 .copyright{
   text-align: center;
+}
+
+.hero-section{
+  background-color: #CFA6A61C;
+}
+
+.container{
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section .main{
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section .text-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-section .text-container .main-text{
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-section .text-container .main-para{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-section .resume-btn{
+  background-color: #F98585;
+  padding: 10px 20px;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.recent-post{
+  background-color: #f4e2e2;
+}
+
+.recent-post .heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.recent-post .card-heading{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.recent-post .date-text{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.recent-post .paragraph{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.recent-post .card-parent{
+  display: flex;
+  gap: 35px;
+}
+
+.recent-post .card{
+  background-color: #FFF;
+  height: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.recent-post .main{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.view-all-btn{
+  font-size: 22px;
+  font-weight: 500;
+  color: #F98585;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
