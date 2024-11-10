@@ -1,5 +1,4 @@
-//import Image from "next/image";
-//import styles from "./page.module.css";
+
 
 export default function Experience() {
   return (
@@ -8,7 +7,7 @@ export default function Experience() {
       <h2>Bachelors Degree</h2>
         <h4>Sir Syed University of Engineering & Technology</h4>
         <p> Bachelor of Science in Computer Science (2020-2023)</p>
-        <p>CGPA: 3.61/4.0</p>
+        <p>CGPA: 3.71/4.0</p>
       <h2>Intermediate</h2>
         <h4>SM Science College</h4>
         <p>Pre-Engineering (2017-2019)</p>
