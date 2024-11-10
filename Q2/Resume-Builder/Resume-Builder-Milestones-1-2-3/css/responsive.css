@@ -1,0 +1,49 @@
+@media screen and (max-width: 991px) {
+
+    .main-form .information-container .field_parent .field {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 766px) {
+    .main .skills ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        margin-bottom: 10px;
+    }
+    .main .information-container .field_parent .field {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .main .skills ul,
+    .main .work ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline-start: 20px;
+    }
+    .main {
+        padding: 30px 20px;
+    }
+    .main-form .field {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-form .information-container .field_parent .field textarea{
+        min-width: 92%;
+        margin-inline-start: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main {
+        padding: 30px 15px;
+    }
+}

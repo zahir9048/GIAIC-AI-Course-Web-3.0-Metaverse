@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <style>    
+        @media print {
+            .button2 {
+                display: none; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo-parent">
+            <div class="logo">
+                <img id="userImage" src="./assets/images/myself.jpeg" alt="my pic">
+            </div>
+            <div class="title-parent">
+                <h1 id="nameField">Zahir Khan</h1>
+            </div>
+        </div>
+
+        <div class="information-container">
+            <div class="personal field_parent">
+                <h2>Personal Information</h2>
+                <div class="fields">
+                    <div class="field"><p><span>Age: </span><span id="ageField"></span></p></div>
+                    <div class="field"><p><span>Father Name: </span><span id="fatherNameField"></span></p></div>
+                    <div class="field"><p><span>Address: </span><span id="addressField"></span></p></div>
+                </div>
+            </div>
+
+            <div class="education field_parent">
+                <h2>Education</h2>
+                <div class="fields">
+                    <div class="field"><p><span>School: </span><span id="schoolField"></span></p></div>
+                    <div class="field"><p><span>College: </span><span id="collegeField"></span></p></div>
+                    <div class="field"><p><span>University: </span><span id="universityField"></span></p></div>
+                </div>
+            </div>
+
+            <div class="skills field_parent">
+                <h2>Skills</h2>
+                <ul class="skills-ul" id="skillsField"></ul>
+            </div>
+
+            <div class="work field_parent">
+                <h2>Work Experience</h2>
+                <ul class="work-ul" id="workExpField"></ul>
+            </div>
+        </div>
+
+        <div class="submit-btn">
+            <a class="button2" href="./form.html">Back</a>
+            <button class="button2 pdf-btn" type="button">Save As PDF</button>
+        </div>
+    </div>
+
+
+    <script src="./js/toggle.js"></script>
+    <script src="./js/resume-handler.js"></script>
+
+
+</body>
+</html>

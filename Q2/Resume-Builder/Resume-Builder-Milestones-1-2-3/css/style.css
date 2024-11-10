@@ -1,0 +1,168 @@
+:root {
+  --white: #fff;
+  --white2: #dfd8d8;
+  --dark_blue: #31025c;
+  --black: #000;
+}
+
+* {
+  font-family: serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark_blue);
+}
+
+
+.button,
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button a{
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.button2{
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+h2 {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.main {
+  width: 75%;
+  margin: 70px auto;
+  background-color: var(--white2);
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+.main .logo-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .logo-parent .logo {
+  width: 200px;
+  height: 200px;
+}
+
+.main .logo-parent .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.main .information-container .field_parent .fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .information-container .field_parent .field {
+  width: 50%;
+}
+
+.main .information-container .field_parent .field p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 8px;
+}
+
+.main .information-container .field_parent .field p span {
+    font-weight: 600;
+  }
+
+.main .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .skills ul li {
+  width: 48%;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-block: 6px;
+  line-height: 1.5;
+}
+
+.main .skills ul li span {
+  font-weight: 600;
+}
+
+.main ul.work-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .work ul li {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 8px;
+  line-height: 1.5;
+}
+
+.main .work ul li span {
+  font-weight: 600;
+}
+
+.main-form .field {
+  display: flex;
+}
+
+.main-form .information-container .field_parent .field p {
+  min-width: 120px;
+}
+
+.main-form .information-container .field_parent .field {
+  width: 50%;
+  margin-block: 10px;
+}
+
+.main-form .information-container .field_parent .field input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-inline-start: 10px;
+}
+
+.main-form .information-container .field_parent .field textarea {
+  width: 175px;
+  min-width: 175px;
+  max-width: 175px;
+  min-height: 50px;
+  margin-inline-start: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.main-form .information-container .field_parent .field .cust-txt-area {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 50px;
+}
