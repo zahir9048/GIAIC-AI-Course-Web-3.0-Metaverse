@@ -1,0 +1,251 @@
+:root {
+  --white: #fff;
+  --white2: #dfd8d8;
+  --dark_blue: #31025c;
+  --black: #000;
+}
+
+* {
+  font-family: serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark_blue);
+}
+.main-form .heading {
+  display: flex;
+  justify-content: center;
+}
+.main-form .heading h1{
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: end;
+  margin-block-end: 15px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button a {
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.button2 {
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  width: fit-content;
+}
+
+h2 {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.img-preview {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 15px;
+  display: none;
+}
+.img-preview img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100% !important;
+}
+.main {
+  width: 75%;
+  margin: 70px auto;
+  background-color: var(--white2);
+  padding: 30px 30px 15px 30px;
+  border-radius: 20px;
+}
+.main .logo-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .logo-parent .logo {
+  width: 200px;
+  height: 200px;
+}
+
+.main .logo-parent .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.main .information-container .field_parent .fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .information-container .field_parent .field {
+  width: 50%;
+}
+
+.main .information-container .field_parent .field p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 8px;
+}
+
+.main .information-container .field_parent .field p span {
+  font-weight: 600;
+}
+
+.main .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline: 0;
+}
+
+.main .skills ul li {
+  width: 48%;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-block: 6px;
+  line-height: 1.5;
+}
+
+.main .skills ul li span {
+  font-weight: 600;
+}
+
+.main ul.work-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-inline: 0;
+}
+
+.main .work ul li {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-block: 8px;
+  line-height: 1.5;
+}
+
+.main .work ul li span {
+  font-weight: 600;
+}
+
+.main-form .field {
+  display: flex;
+}
+
+.main-form .information-container .field_parent .field p {
+  min-width: 120px;
+}
+
+.main-form .information-container .field_parent {
+  padding-inline: 10px;
+  position: relative;
+}
+
+.main-form .information-container .field_parent .field {
+  width: 50%;
+  margin-block: 10px;
+}
+
+.main-form .field input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-inline-start: 10px;
+}
+
+.main-form .information-container .field_parent textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-form .information-container .field_parent .cust-txt-area {
+  width: 100%;
+  min-height: 50px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.pe-20px {
+  padding-inline-end: 20px;
+}
+
+.objective .field input {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button.add-item-btn.button2 {
+  position: absolute;
+  right: 110px;
+  top: 0;
+}
+
+button.delete-item-btn.button2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.information-container .skills li[contenteditable="true"].editing,
+.information-container .work li[contenteditable="true"].editing {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-inline-start: 10px;
+  background: white;
+}
+.main-form .title-parent input.editing {
+  margin-top: 15px;
+}
+.main-form .title-parent span {
+  font-size: 2em;
+  font-weight: bold;
+  margin-block: 0.67em;
+}
+.made-by p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  text-align: center;
+} 

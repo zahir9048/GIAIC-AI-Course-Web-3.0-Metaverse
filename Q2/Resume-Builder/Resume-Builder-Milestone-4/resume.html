@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generated Resume</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <style>
+      @media print {
+        body {
+          margin: 0;
+          background-color: #fff;
+        }
+
+        .button,
+        .submit-btn {
+          display: none;
+        }
+
+        .button a {
+          background-color: var(--dark_blue);
+          color: var(--white);
+          border-radius: 10px;
+          padding: 10px 15px;
+          text-decoration: none;
+          font-size: 16px;
+          border: none;
+        }
+
+        h2 {
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+        .main {
+          width: 100%;
+          margin: 0px;
+          background-color: var(--white2);
+          padding: 30px;
+          border-radius: 20px;
+        }
+        .main .logo-parent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .main .logo-parent .logo {
+          width: 200px;
+          height: 200px;
+        }
+
+        .main .logo-parent .logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+        }
+
+        .main .information-container .field_parent .fields {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .main .information-container .field_parent .field {
+          width: 50%;
+        }
+
+        .main .information-container .field_parent .field p {
+          font-size: 18px;
+          font-weight: 500;
+          margin-block: 8px;
+        }
+
+        .main .information-container .field_parent .field p span {
+          font-weight: 600;
+        }
+
+        .main .skills ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .main .skills ul li {
+          width: 48%;
+          font-size: 18px;
+          font-weight: 500;
+          padding-right: 10px;
+          margin-block: 6px;
+          line-height: 1.5;
+        }
+
+        .main .skills ul li span {
+          font-weight: 600;
+        }
+
+        .main ul.work-ul {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .main .work ul li {
+          width: 100%;
+          font-size: 18px;
+          font-weight: 500;
+          margin-block: 8px;
+          line-height: 1.5;
+        }
+
+        .main .work ul li span {
+          font-weight: 600;
+        }
+
+        .main-form .field {
+          display: flex;
+        }
+
+        .main-form .information-container .field_parent .field p {
+          min-width: 120px;
+        }
+
+        .main-form .information-container .field_parent .field {
+          width: 50%;
+          margin-block: 10px;
+        }
+
+        .main-form .information-container .field_parent .field input {
+          border-radius: 15px;
+          border: none;
+          padding: 10px 10px;
+          font-size: 16px;
+          font-weight: 500;
+          margin-inline-start: 10px;
+        }
+
+        .main-form .information-container .field_parent .field textarea {
+          width: 175px;
+          min-width: 175px;
+          max-width: 175px;
+          min-height: 50px;
+          margin-inline-start: 10px;
+          border-radius: 10px;
+          border: none;
+          padding: 10px;
+        }
+
+        .main-form .information-container .field_parent .field .cust-txt-area {
+          width: 200px;
+          min-width: 200px;
+          max-width: 200px;
+          min-height: 50px;
+        }
+
+        .objective h2 span{
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main main-form">
+      <div class="logo-parent">
+        <div class="logo">
+          <img
+            id="userImage"
+            class=""
+            src="./assets/images/myself.jpeg"
+            alt="my pic"
+          />
+        </div>
+        <div class="title-parent field">
+          <h1 id="nameField" class="editable-field">Zahir Khan</h1>
+        </div>
+      </div>
+
+      <div class="information-container">
+        <div class="objective field_parent">
+          <h2>Objective <span>(Click To Show/Hide)</span></h2>
+          <div class="fields">
+            <div class="field w-100">
+                <p id="objectiveField" class="editable-field">
+
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="personal field_parent">
+          <h2>Personal Information</h2>
+          <div class="fields">
+            <div class="field">
+              <p>
+                <span>Age: </span>
+                <span id="ageField" class="editable-field"></span>
+              </p>
+            </div>
+            <div class="field">
+              <p>
+                <span>Gender: </span>
+                <span id="genderField" class="editable-field"></span>
+              </p>
+            </div>
+            <div class="field">
+              <p>
+                <span>Father Name: </span
+                ><span id="fatherNameField" class="editable-field"></span>
+              </p>
+            </div>
+            <div class="field">
+              <p>
+                <span>Address: </span
+                ><span id="addressField" class="editable-field"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="education field_parent">
+          <h2>Education</h2>
+          <div class="fields">
+            <div class="field">
+              <p>
+                <span>School: </span
+                ><span id="schoolField" class="editable-field"></span>
+              </p>
+            </div>
+            <div class="field">
+              <p>
+                <span>College: </span
+                ><span id="collegeField" class="editable-field"></span>
+              </p>
+            </div>
+            <div class="field">
+              <p>
+                <span>University: </span
+                ><span id="universityField" class="editable-field"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills field_parent">
+          <h2>Skills</h2>
+          <ul class="skills-ul editable-field" id="skillsField"></ul>
+        </div>
+
+        <div class="work field_parent">
+          <h2>Work Experience</h2>
+          <ul class="work-ul editable-field" id="workExpField"></ul>
+        </div>
+      </div>
+
+      <div class="submit-btn">
+        <a class="button2" href="./form.html">Back</a>
+        <button class="button2 pdf-btn" type="button" onclick="window.print()">
+          Save As PDF
+        </button>
+        <button class="button2 edit-btn" type="button">Edit</button>
+      </div>
+      <div class="made-by">
+        <p>2024 © Made By Zahir Khan, Software Engineer.</p>
+      </div>
+    </div>
+
+    <script src="./js/toggle.js"></script>
+    <script src="./js/resume-handler.js"></script>
+  </body>
+</html>

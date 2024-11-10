@@ -1,0 +1,88 @@
+@media screen and (max-width: 991px) {
+
+    .main-form .information-container .field_parent .field {
+        width: 100%;
+    }
+    .main-form .information-container .field_parent .field p {
+        /* min-width: 120px; */
+        width: 100%;
+    }
+    .main-form .field input{
+        margin-inline-start: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .pe-20px{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-form .heading h1 {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .main .skills ul li {
+        width: 100%;
+    }
+    .button {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .main{
+        padding: 10px 10px 15px 10px;
+        width: 90%;
+    }
+    .main .information-container .field_parent .field {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .main .skills ul,
+    .main .work ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline-start: 20px;
+    }
+    .main {
+        padding: 30px 20px 15px 20px;
+    }
+    .main-form .field {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-form .information-container .field_parent .field textarea{
+        min-width: 92%;
+        margin-inline-start: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main {
+        padding: 30px 10px 10px 10px;
+    }
+    .main .logo-parent .logo {
+        width: 150px;
+        height: 150px;
+    }
+    .submit-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-parent span,
+    .title-parent h1 {
+        font-size: 1.75em;
+    }
+}

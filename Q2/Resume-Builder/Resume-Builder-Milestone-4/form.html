@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <div class="main main-form">
+      <div class="heading">
+          <h1>Dynamic Resume (Enter Your Details)</h1>
+      </div>
+      <form id="resumeForm">
+        <div class="logo-parent">
+          <p>Upload Your Image</p>
+          <div class="img-upload">
+            <input
+              type="file"
+              id="myFile"
+              name="filename"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="img-preview">
+
+          </div>
+        </div>
+
+        <div class="information-container">
+          <div class="objective field_parent">
+            <h2>Objective (Click To Show/Hide)</h2>
+            <div class="fields">
+              <div class="field w-100">
+                <textarea
+                  class="cust-txt-area"
+                  name="objective-name"
+                  id="objective"
+                  rows="4"
+                  placeholder="Enter Your Objective Here"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="personal field_parent">
+            <h2>Personal Information</h2>
+            <div class="fields">
+              <div class="field">
+                <p><span>Name: </span></p>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <p><span>Gender: </span></p>
+                <input
+                  type="text"
+                  id="gender"
+                  placeholder="Enter Your Gender"
+                  required
+                />
+              </div>
+              <div class="field">
+                <p><span>Age: </span></p>
+                <input
+                  type="number"
+                  id="age"
+                  placeholder="Enter Your Age"
+                  required
+                />
+              </div>
+              <div class="field">
+                <p><span>Father Name: </span></p>
+                <input
+                  type="text"
+                  id="fatherName"
+                  placeholder="Enter Your Father Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <p><span>Address: </span></p>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Enter Your Address"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="education field_parent">
+            <h2>Education</h2>
+            <div class="fields">
+              <div class="field pe-20px">
+                <p><span>School: </span></p>
+                <textarea
+                  name="school-name"
+                  id="school"
+                  rows="3"
+                  placeholder="Enter Your School Name"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="field">
+                <p><span>College: </span></p>
+                <textarea
+                  name="college-name"
+                  id="college"
+                  rows="3"
+                  placeholder="Enter Your College Name"
+                ></textarea>
+              </div>
+              <div class="field pe-20px">
+                <p><span>University: </span></p>
+                <textarea
+                  name="uni-name"
+                  id="university"
+                  rows="3"
+                  placeholder="Enter Your University Name"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="skills field_parent">
+            <h2>Skills</h2>
+
+            <div class="field w-100">
+              <p><span>Enter Skills (Comma Seperated): </span></p>
+              <textarea
+                class="cust-txt-area"
+                name="skills"
+                id="skills"
+                rows="3"
+                placeholder="Enter Your Skills..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="field_parent work">
+            <h2>Work Experience</h2>
+
+            <div class="field w-100">
+              <p><span>Enter Work Experince (Comma Seperated): </span></p>
+              <textarea
+                class="cust-txt-area"
+                name="work-exp"
+                id="workExp"
+                rows="3"
+                placeholder="Enter Your Work Exp..."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-btn">
+          <a class="button2" href="./index.html">Back</a>
+          <input class="button2" type="submit" value="Generate Resume" />
+        </div>
+      </form>
+      <div class="made-by">
+        <p>2024 © Made By Zahir Khan, Software Engineer.</p>
+      </div>
+    </div>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/form-handler.js"></script>
+  </body>
+</html>
