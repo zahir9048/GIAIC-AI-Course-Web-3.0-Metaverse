@@ -23,8 +23,8 @@ export default function Home() {
     setItem("");
   };
 
-  let handleDeleteTask = (index: number) => {
-    let newTasks = [...tasks]; 
+  const handleDeleteTask = (index: number) => {
+    const newTasks = [...tasks]; 
     newTasks.splice(index, 1); 
     setTask(newTasks);
 
@@ -34,7 +34,7 @@ export default function Home() {
     setItem("")
   }
 
-  let handleEditTask = (index: number) => {
+  const handleEditTask = (index: number) => {
     setItem(tasks[index]);
     setEditIndex(index);
   }
