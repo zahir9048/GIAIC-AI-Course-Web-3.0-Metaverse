@@ -28,7 +28,7 @@ body {
 
 
 .main-sec{
-  height: 500px;
+  margin-block: 150px;
   display: flex;
 }
 
